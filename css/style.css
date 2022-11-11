@@ -110,6 +110,9 @@ a.nav-link{
     .size-text-title{
         font-size: 20px;
     }
+    .size-image{
+        width: 200px;
+    }
     .container.text-truncate.p-0{
         width: 100%;
         font-size:1em;
@@ -137,6 +140,9 @@ a.nav-link{
     }
     .size-text-title{
         font-size: 20px;
+    }
+    .size-image{
+        width: 100px;
     }
     .container.text-truncate.p-0{
         width: 100%;
