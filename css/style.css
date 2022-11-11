@@ -51,8 +51,8 @@ a.nav-link{
     #collapsibleNavId{
         padding-right: 0%;
     }
-    .width{
-        width: 150px;
+    .size-text-title{
+        font-size: 30px;
     }
     .container.text-truncate.p-0{
         width: 100%;
@@ -71,11 +71,6 @@ a.nav-link{
         font-size: 30px;
     }
 }
-@media(max-width: 1200px){
-    .width{
-        width: 90px;
-    }
-}
 @media(max-width: 992px){
     li.nav-item{
         text-align: center;
@@ -84,8 +79,8 @@ a.nav-link{
     #collapsibleNavId{
         padding-right: 0%;
     }
-    .width{
-        width: 120px;
+    .size-text-title{
+        font-size: 25px;
     }
     .container.text-truncate.p-0{
         width: 100%;
@@ -112,8 +107,8 @@ a.nav-link{
     #collapsibleNavId{
         padding-right: 0%;
     }
-    .width{
-        width: 90px;
+    .size-text-title{
+        font-size: 20px;
     }
     .container.text-truncate.p-0{
         width: 100%;
@@ -140,8 +135,8 @@ a.nav-link{
     #collapsibleNavId{
         padding-right: 0%;
     }
-    .width{
-        width: 70px;
+    .size-text-title{
+        font-size: 20px;
     }
     .container.text-truncate.p-0{
         width: 100%;
