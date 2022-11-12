@@ -65,28 +65,89 @@
                 <li class="nav-item">
                   <a class="nav-link" href="pages/page5.html">О нас</a>
                 </li>
-                <!-- <li>
-                  <div class="text-center">
+                <li class="nav-item pt-1">
                     <button
                       style="
-                        color: rgb(146, 138, 138) !important;
-                        font-size: 20px;
-                        font-family: 'iviSans Medium';
+                        color: white;
                         border-color: antiquewhite;
+                        max-width: 200px;
                       "
                       type="button"
                       class="btn"
-                      data-toggle="modal"
-                      data-target="#exampleModalLong"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
                     >
-                      Вход
+                    Купить подписку
                     </button>
-                  </div>
-                </li> -->
+                </li>
               </ul>
             </div>
           </div>
         </nav>
+      </div>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content" style="width: fit-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Купить подписку</h5>
+              <button
+                style="color: white"
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="js-form" action="" novalidate>
+                <div class="form__group mt-3">
+                  <div>Введите имя пользователя</div>
+                  <input
+                    id="nameUsers"
+                    type="text"
+                    class="input js-input-name form-control"
+                    name="name"
+                    placeholder="Название"
+                  />
+                </div>
+                <div class="form__group mt-3">
+                  <div>Введите номер карты</div>
+                  <input
+                    id="cardNumber"
+                    type="text"
+                    class="input js-input-card-number form-control"
+                    name="cardNumber"
+                    placeholder="Номер карты"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                id="addFilm"
+                style="color: white; background-color: #312b45"
+                class="btn"
+                data-bs-dismiss="modal"
+              >
+                Купить
+              </button>
+              <button
+                type="button"
+                class="btn"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                Закрыть
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
