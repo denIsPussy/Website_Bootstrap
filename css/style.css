@@ -35,8 +35,8 @@ a.nav-link{
     width: 120px;
 }
 #collapsibleNavId{
-    padding-right: 10%;
-    margin-right: 7%;
+    /* padding-right: 10%;
+    margin-right: 7%; */
     justify-content: center;
 }
 .container.text-truncate.p-0{

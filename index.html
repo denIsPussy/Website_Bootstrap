@@ -16,6 +16,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   </head>
   <body style="background: url('background.png')">
     <style>
@@ -34,7 +35,7 @@
               images/logo.png"
             />
             <button
-              class="navbar-toggler d-md-none custom-toggler"
+              class="navbar-toggler d-md-none custom-toggler text-right"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapsibleNavId"
@@ -64,7 +65,88 @@
                 <li class="nav-item">
                   <a class="nav-link" href="pages/page5.html">О нас</a>
                 </li>
+                <!-- <li>
+                  <div class="text-center">
+                    <button
+                      style="
+                        color: rgb(146, 138, 138) !important;
+                        font-size: 20px;
+                        font-family: 'iviSans Medium';
+                        border-color: antiquewhite;
+                      "
+                      type="button"
+                      class="btn"
+                      data-toggle="modal"
+                      data-target="#exampleModalLong"
+                    >
+                      Вход
+                    </button>
+                  </div>
+                </li> -->
               </ul>
+            </div>
+            <!-- <div
+              class="modal fade"
+              id="exampleModalLong"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLongTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">
+                      Modal title
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">...</div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+              Launch demo modal
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </nav>
@@ -163,7 +245,14 @@
     </main>
     <footer>
       <div class="row text-center">
-        <div class="col-12" style="color: rgb(146, 138, 138); font-size: 10px; margin: 20px 0 -10px 0">
+        <div
+          class="col-12"
+          style="
+            color: rgb(146, 138, 138);
+            font-size: 10px;
+            margin: 20px 0 -10px 0;
+          "
+        >
           © 2022 ООО «Иви.ру» HBO ® and related service marks are the property
           of Home Box Office, Inс
         </div>

@@ -16,6 +16,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script defer src="../filmsBar.js"></script>
   </head>
   <body style="background: url('background.png')">
     <style>
@@ -94,7 +95,7 @@
             надолго.
           </div>
         </div>
-        <div class="row text-center ms-1 gx-1">
+        <div class="row text-center ms-1 gx-1" id="filmBar1">
           <div class="row text-start">
             <div
               class="col-12 category-text-width"
@@ -164,7 +165,7 @@
             </div>
           </div>
         </div>
-        <div class="row text-center ms-1 gx-1">
+        <div class="row text-center ms-1 gx-1" id="filmBar2">
           <div class="row text-start">
             <div
               class="col-12 category-text-width"
@@ -231,6 +232,40 @@
             />
             <div class="container text-truncate p-0" style="color: white">
               Черная любовь
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <button style="color: white; background-color: #312b45; width: fit-content;" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Добавить фильм</button>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content" style="width:fit-content;">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Добавить фильм</h5>
+                <button style="color: white;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="js-form" action="" novalidate>
+                  <div class="form__group">
+                    <div>Выберите изображение</div>
+                    <input type="file" class="input js-input-image form-control" multiple accept="image/*,image/jpeg/png" onchange="donwload(this)">
+                    <p id="urltoimage" style="visibility: hidden;"></p>
+                  </div>
+                  <div class="form__group mt-3">
+                    <div>Введите название фильма</div>
+                    <input id="nameFilm" type="text" class="input js-input-name form-control" name="name" placeholder="Название">
+                  </div>
+                  <div class="form__group mt-3">
+                    <div>Введите год фильма</div>
+                    <input id="yearsFilm" type="text" class="input js-input-years form-control" name="name" placeholder="Год">
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button id="addFilm" style="color: white; background-color: #312b45" class="btn" data-bs-dismiss="modal">Добавить</button>
+                <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">Закрыть</button>
+              </div>
             </div>
           </div>
         </div>
