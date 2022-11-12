@@ -16,7 +16,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script defer src="carousel.js"></script>
   </head>
   <body style="background: url('background.png')">
     <style>
@@ -85,82 +85,33 @@
                 </li> -->
               </ul>
             </div>
-            <!-- <div
-              class="modal fade"
-              id="exampleModalLong"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="exampleModalLongTitle"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">
-                      Modal title
-                    </h5>
-                    <button
-                      type="button"
-                      class="close"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">...</div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                      Save changes
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-              Launch demo modal
-            </button>
-            
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </nav>
       </div>
     </header>
     <main>
       <div class="container">
-        <div class="text-center">
+        <div class="text-center" id="banner">
           <img
             src="
             images/p1/main-foto.png"
             width="900px"
             alt=""
-            class="img-fluid rounded-3"
+            class="img-fluid rounded-3 hide"
+          />
+          <img
+            src="
+            images/p1/main-foto1.png"
+            width="900px"
+            alt=""
+            class="img-fluid rounded-3 hide"
+          />
+          <img
+            src="
+            images/p1/main-foto2.png"
+            width="900px"
+            alt=""
+            class="img-fluid rounded-3 hide"
           />
         </div>
       </div>

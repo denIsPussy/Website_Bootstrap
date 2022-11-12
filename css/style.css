@@ -164,3 +164,27 @@ a.nav-link{
 body{
     overflow-x: hidden;
 }
+#banner {
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #banner img {
+    border-radius: 5px;
+  }
+  
+  #banner img.show {
+    width: 95%;
+    opacity: 1;
+    transition: opacity 1s, visibility 0s;
+  }
+  
+  #banner img.hide {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 0s 1s;
+  }
