@@ -10,6 +10,13 @@
 	font-family: 'iviSans Regular'; 
 	src: url(../fonts/iviSans/iviSans-Regular.otf); 
 }
+label.error {
+    color: red;
+}
+input.error {
+    border: 1px dashed red;
+    color: red;
+}
 .bg-rose {
     --bs-bg-opacity: 1;
     background-color: rgb(225, 30, 157) !important;

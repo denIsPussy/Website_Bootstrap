@@ -1,274 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>ivi</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="carousel.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
   </head>
   <body style="background: url('background.png')">
     <style>
       body {
-        background: #100e19 !important;
+      background: #FFFF99 !important;
       }
     </style>
     <header>
-      <div class="container-fluid bg-info1">
-        <nav class="navbar navbar-expand-md bg-light1">
-          <div class="container-fluid bg-danger1">
-            <img
-              class="navbar-brand bg-red1"
-              width="120px"
-              src="
-              images/logo.png"
-            />
-            <button
-              class="navbar-toggler d-md-none custom-toggler text-right"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapsibleNavId"
-              aria-controls="collapsibleNavId"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="collapse navbar-collapse bg-rose1"
-              id="collapsibleNavId"
-            >
-              <ul id="list" class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Мой ivi</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/page2.html">Фильмы</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/page3.html">Сериалы</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/page4.html">Что нового</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/page5.html">О нас</a>
-                </li>
-                <li class="nav-item pt-1">
-                    <button
-                      style="
-                        color: white;
-                        border-color: antiquewhite;
-                        max-width: 200px;
-                      "
-                      type="button"
-                      class="btn"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                    >
-                    Купить подписку
-                    </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-      <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content" style="width: fit-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Купить подписку</h5>
-              <button
-                style="color: white"
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <div class="js-form" action="" novalidate>
-                <div class="form__group mt-3">
-                  <div>Введите имя пользователя</div>
-                  <input
-                    id="nameUsers"
-                    type="text"
-                    class="input js-input-name form-control"
-                    name="name"
-                    placeholder="Название"
-                  />
-                </div>
-                <div class="form__group mt-3">
-                  <div>Введите номер карты</div>
-                  <input
-                    id="cardNumber"
-                    type="text"
-                    class="input js-input-card-number form-control"
-                    name="cardNumber"
-                    placeholder="Номер карты"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button
-                id="addFilm"
-                style="color: white; background-color: #312b45"
-                class="btn"
-                data-bs-dismiss="modal"
-              >
-                Купить
-              </button>
-              <button
-                type="button"
-                class="btn"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              >
-                Закрыть
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
     </header>
     <main>
-      <div class="container">
-        <div class="text-center" id="banner">
-          <img
-            src="
-            images/p1/main-foto.png"
-            width="900px"
-            alt=""
-            class="img-fluid rounded-3 hide"
-          />
-          <img
-            src="
-            images/p1/main-foto1.png"
-            width="900px"
-            alt=""
-            class="img-fluid rounded-3 hide"
-          />
-          <img
-            src="
-            images/p1/main-foto2.png"
-            width="900px"
-            alt=""
-            class="img-fluid rounded-3 hide"
-          />
+      <form id="calc" class="from" method="" action="#" style="margin: 30px 0 0 30px">
+        <select id="operation" required="required">
+          <option value="">Выберите операцию</option>
+          <option>Деление</option>
+          <option>Умножение</option>
+          <option>Сложение</option>
+          <option>Вычитание</option>
+        </select>
+        <div style="color:black">Введите первое число</div>
+        <input id="firstDig" type="number" required="required" placeholder="Первое число">
+
+        <div style="color:black">Введите второе число</div>
+        <input id="secondDig" type="number" required="required" placeholder="Второе число">
+
+        <div style="color:black">Результат</div>
+        <input type="number" id="result">
+
+        <div style="margin-top: 10px">
+          <input id="startCalc" class="button" type="button" value="Посчитать"/>
         </div>
-      </div>
-      <div id="film-container" class="container">
-        <div class="row text-center">
-          <div
-            class="col-12 size-text-title"
-            style="color: white; font-family: 'iviSans Medium'"
-          >
-            Рекомендуем к просмотру
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2">
-            <img
-              class="img-fluid rounded-3"
-              src="
-              images/p1/Гудбай, Америка.jpg"
-              alt=""
-            />
-            <div class="container text-truncate p-0" style="color: white">
-              Гудбай, Америка
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2">
-            <img
-              class="img-fluid rounded-3"
-              src="
-              images/p1/Звёздная принцесса и силы зла.jpg"
-              alt=""
-            />
-            <div class="container text-truncate p-0" style="color: white">
-              Звёздная принцесса и силы зла
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2">
-            <img
-              class="img-fluid rounded-3"
-              src="
-              images/p1/Команда котиков.jpg"
-              alt=""
-            />
-            <div class="container text-truncate p-0" style="color: white">
-              Команда котиков
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2">
-            <img
-              class="img-fluid rounded-3"
-              src="
-              images/p1/Молодой человек.jpg"
-              alt=""
-            />
-            <div class="container text-truncate p-0" style="color: white">
-              Молодой человек
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2">
-            <img
-              class="img-fluid rounded-3"
-              src="
-              images/p1/Ниндзяго Мастера кружицу.jpg"
-              alt=""
-            />
-            <div class="container text-truncate p-0" style="color: white">
-              Ниндзяго Мастера кружицу
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2">
-            <img
-              class="img-fluid rounded-3"
-              src="
-              images/p1/Фиксики против кработов.jpg"
-              alt=""
-            />
-            <div class="container text-truncate p-0" style="color: white">
-              Фиксики против кработов
-            </div>
-          </div>
-        </div>
-      </div>
+      </form>
+
+      <form id="alert" class="from" method="" action="#" style="margin: 30px 0 0 30px">
+        <div style="color:black">Введите текст</div>
+        <input id="text" type="text" required="required" placeholder="Текст">
+        <input id="start" class="button" type="button" value="Показать"/>
+      </form>
+
+
+      <!-- <input id="button" class="buttonText" type="button" value="clickme"/>
+      <label for="text" >num1</label>
+      <input type="number"  value="0" id="text" />
+      <label for="result" style="color:white">Result</label>
+      <input type="number" id="result" /> -->
     </main>
-    <footer>
-      <div class="row text-center">
-        <div
-          class="col-12"
-          style="
-            color: rgb(146, 138, 138);
-            font-size: 10px;
-            margin: 20px 0 -10px 0;
-          "
-        >
-          © 2022 ООО «Иви.ру» HBO ® and related service marks are the property
-          of Home Box Office, Inс
-        </div>
-      </div>
-    </footer>
+    <script src="js2.js"></script>
   </body>
 </html>
